@@ -1,0 +1,28 @@
+<svg>
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-size: 30px;
+        
+        font-family: Montserrat, Segoe UI;
+        font-weight: 700;
+        font-weight: lighter;
+      }
+
+      .cls-2 {
+        filter: url(#Nitrogen);
+      }
+    </style>
+    <filter id="Nitrogen" x="0" y="0" width="300" height="83" filterUnits="userSpaceOnUse">
+      <feOffset dy="100" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <text id="Nitrogen-1" data-name="Nitrogen" class="cls-1" transform="translate(9 59)"><tspan x="0" y="0">Nitrogen</tspan></text>
+  </g>
+</svg>

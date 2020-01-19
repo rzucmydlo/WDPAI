@@ -1,13 +1,16 @@
-<svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="209" height="83" viewBox="0 0 209 83">
   <defs>
     <style>
       .cls-1 {
         fill: #fff;
-        font-size: 30px;
+        font-size: 40px;
+        
         
         font-family: Montserrat, Segoe UI;
         font-weight: 700;
-        font-weight: lighter;
+        font-weight: lighter, bold;
+        text-shadow: 3px 3px #2A2837; 
+        
       }
 
       .cls-2 {

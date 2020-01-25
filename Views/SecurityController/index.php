@@ -13,11 +13,15 @@
         <img src="../Public/img/nitrogen.svg">
         <img src="../Public/img/pngguru.com.png">
     </div>
+
+    <div class="content">
+    </div>
     
     <form>
         <input name="Name" type="text" placeholder="name">
         <input name="email" type="text" placeholder="email@email.com">
         <input name="password" type="password" placeholder="password">
+        
     <div class="twobuttons"> 
     <button type="submit">REGISTER</button>
         <button type="submit">LOG IN</button>

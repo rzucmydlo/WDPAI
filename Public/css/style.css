@@ -106,6 +106,16 @@ button  { /* przyciski continue, register */
 
      }
 
+     .messages {
+        color: white;
+        text-align: center;
+        margin-bottom: 0.4em;
+    }
+
+    .navbar-font-color {
+        color: rgba(255,255,255,.5);
+    }
+
 /* position: relative; left: 800px; bottom: 200px <<<<<----zrobic      przesuniecie napisu nitrogen         */ 
 
 @media only screen and (max-device-width: 992px){

@@ -22,7 +22,7 @@ body {
     justify-content: center;
     height: inherit;
     align-items: center;
-    background-image: url("background-final.png");
+    background-image: url("background.png");
     background-size: cover;
     background-position: center;
     /*background-repeat: no-repeat;*/   
@@ -92,7 +92,7 @@ button  { /* przyciski continue, register */
 }
 
 .logo > img {
-    width: 18.5em; /* wielkosc  napisu */
+    width: 15.5em; /* wielkosc  napisu */
        
 }
 
@@ -105,6 +105,8 @@ button  { /* przyciski continue, register */
      
 
      }
+
+
 
      .messages {
         color: white;

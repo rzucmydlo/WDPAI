@@ -14,6 +14,7 @@ class SecurityController extends AppController {
             $email = $_POST['email'];
             $password = $_POST['password'];
 
+
             $user = $userRepository->getUser($email);
 
             if (!$user) {
@@ -25,6 +26,7 @@ class SecurityController extends AppController {
                 $this->render('login', ['messages' => ['Wrong password!']]);
                 return;
             }
+           
 
             $_SESSION["id"] = $user->getEmail();
             $_SESSION["role"] = $user->getRole();

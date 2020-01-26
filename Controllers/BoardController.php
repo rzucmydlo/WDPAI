@@ -11,9 +11,9 @@ class BoardController extends AppController {
         $database = new Database();
         $database->connect();
 
-        $post1 = new Post('images.png', 2, 0);
-        $post2 = new Post('images-1.png', 45, 0);
-        $post3 = new Post('images-2.png', 12, 1);
+        $post1 = new Post('one.png', 2, 0);
+        $post2 = new Post('two.png', 45, 0);
+        $post3 = new Post('three.png', 12, 1);
 
         $data = [$post1, $post2, $post3];
         $this->render('board', ['posts' => $data]);

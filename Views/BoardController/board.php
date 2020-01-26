@@ -19,7 +19,7 @@
     <link rel="Stylesheet" type="text/css" href="../Public/css/board.css" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <?php include(dirname(__DIR__).'/Common/head.php'); ?>
-    <title>picmash</title>
+    <title>Nitrogen</title>
 </head>
 <body>
 <?php include(dirname(__DIR__).'/Common/navbar.php'); ?>
@@ -31,21 +31,17 @@
             <img src="<?= '../Public/img/uploads/'.$post->getImage() ?>">
             <div class="actions-bar">
                     <i class="fas fa-heart"></i> <?= $post->getLikes() ?> 
-                    <i class="fas fa-heart-broken"></i> <?= $post->getDislikes() ?> 
                     <span class="float-right">SAVE <i class="fas fa-bookmark"></i></span>
             </div>
+
+            <div class="article">
+            </div>
+
+        
         </div>
         <?php endforeach ?>
     </div>
 
-    <button type="button" class="btn btn-primary"><i class="fas fa-heart"></i> Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-danger">Danger</button>
-    <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-info">Info</button>
-    <button type="button" class="btn btn-light">Light</button>
-    <button type="button" class="btn btn-dark">Dark</button>
 </div>
 </body>
 </html>

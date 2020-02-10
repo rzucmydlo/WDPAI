@@ -1,23 +1,30 @@
 <!DOCTYPE html>
+<html lang="eng">
+
 <head>
+
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="Stylesheet" type="text/css" href="../Public/css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../Public/css/style.css" />
+    
     <?php include(dirname(__DIR__).'/Common/head.php'); ?>
     <title>Nitrogen</title>
+    <meta name="description" content="We can help you track your menstruate cycle!"/>
+    <meta name="keywords" content="period, cycle, menstruate, woman's body"/>
 </head>
+
 <body>
 <div class="container">
+<a title="Nitrogen"> <!-- napis Nitrogen po najechaniu -->
     <div class="logo">
         <img src="../Public/img/nitrogen.svg">
         <img src="../Public/img/pngguru.com.png">
     </div>
-
+</a>
     <div class="content">
     </div>
-    
 
+    
     <form action="?page=login" method="POST">
         <div class="messages">
             <?php

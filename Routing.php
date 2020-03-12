@@ -29,7 +29,9 @@ class Routing {
             'users' => [
                 'controller' => 'AdminController',
                 'action' => 'users'
-            ]
+            ],
+            
+
         ];
     }
 
@@ -40,7 +42,6 @@ class Routing {
         if (isset($this->routes[$page])) {
             $controller = $this->routes[$page]['controller'];
             $action = $this->routes[$page]['action'];
-
             $object = new $controller;
             $object->$action();
         }

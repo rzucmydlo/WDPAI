@@ -13,8 +13,7 @@ body {
 
 
 .container { /*tlo*/  
-    margin: 0;  
-    max-width: unset;
+    margin: auto;  
     width: 100%;    
     height: 100%;
     display: flex;
@@ -53,7 +52,6 @@ form > input { /* obramowanie */
     border-radius: 2em;
 
     /* font */
-    /*color: rgb(241, 65, 21);*/
     line-height: 2.0em;   /*wysokosc przyciskow */
     font-size: 1em;
 }
@@ -83,7 +81,6 @@ button  { /* przyciski continue, register */
 
 .logo {   /*odwolanie do napisu */
     display: flex;
-    
     flex-direction: column;
     align-items: center;
     width: 30%;
@@ -103,13 +100,12 @@ button  { /* przyciski continue, register */
      color:  #6d2f6a;
      position: relative; left: 310px; bottom: 175px
      
-
      }
 
 
 
      .messages {
-        color: white;
+        color: red;
         text-align: center;
         margin-bottom: 0.4em;
     }

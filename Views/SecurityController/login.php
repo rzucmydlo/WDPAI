@@ -46,6 +46,6 @@
     </div>
 
     </form>
-</div>
+</div> <!-- koniec div container -->
 </body>
 </html>

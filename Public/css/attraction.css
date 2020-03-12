@@ -1,0 +1,103 @@
+.image-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin: 1.5em;
+}
+
+.wrapper>button{
+    background: #FFEA00;
+}
+
+.wrapper>button>img{
+    width: 12em;
+    height: 9em;
+}
+
+.attraction-name{
+    text-align: center;
+    background: #F7FF87;
+}
+
+#position-down{
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    margin-left: -5.2em;
+    margin-bottom: 0.5em;
+}
+
+.name{
+    text-align: center;
+    background: #FFEA00;
+}
+
+.mainArticle{
+    display: inline-block;
+    max-width: 25em;
+    margin-top: 2em;
+    background: #F7FF87;
+}
+
+.mainArticle p{
+    text-align: center;
+    padding-top: 1em;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+}
+
+.images{
+    padding: 1em 1em 1em 1em;
+    background: #F7FF87;
+    float: right;
+}
+
+.markButton{
+    justify-items: center;
+    justify-content: center;
+    margin-right: 2em;
+    padding-right: 5em;
+    background: #FFEA00;
+    color: #6809B8;
+    width: 40%;
+    border-color: red;
+}
+
+.rightContent{
+    float: right;
+}
+
+.comment-section{
+    background: #FFEA00;
+}
+
+
+.comment{
+    display: inline-block;
+    background: #F7FF87;
+    padding-right: 40em;
+    border: 1px solid black;
+}
+
+.grade{
+    padding-right: 2em;
+    padding-left: 2em;
+    float: right;
+    clear: both;
+    margin-left: 1em;
+    background: #F7FF87;
+    border: 1px solid black;
+}
+
+
+#comment-info{
+    color : red;
+}
+
+.dropdown-content{
+    display: none;
+}
+
+.show{
+    display: block;
+}

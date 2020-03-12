@@ -2,6 +2,8 @@
 
 require_once "Repository.php";
 require_once __DIR__.'//..//Models//Post.php';
+require_once __DIR__.'/../Repository/UserRepository.php';
+
 
 class PostRepository extends Repository {
 
@@ -15,13 +17,22 @@ class PostRepository extends Repository {
 
         foreach ($posts as $post) {
             $result[] = new Post(
-                "url",
-                1,
-                1,
-                $post['description']
+                $post['image'],
+                $post['likes'],
+                $post['dislikes'],
+                $post['description'],
+
             );
         }
+
+        //$posts = mysqli_connect("localhost","root","","users"); //keep your db name
+        //$sql = "SELECT * FROM posts";
+        //$sth = $posts->query($sql);
+        //$result=mysqli_fetch_array($sth);
+        //echo '<img src="../Public/img/uploads/one.png'
+        //.base64_encode( $result['two.png'] ).'"/>';   
 
         return $result;
     }
 }
+

@@ -1,6 +1,8 @@
 <?php
 
-require_once 'Routing.php';
+echo "Hi there";
 
-$router = new Routing();
-$router->run();
+#require_once 'Routing.php';
+
+#$router = new Routing();
+#$router->run();

@@ -1,9 +1,9 @@
 <?php
 
 require_once 'AppController.php';
-require_once __DIR__.'//..//Models//Post.php';
-require_once __DIR__.'//..//Database.php';
-require_once __DIR__.'//..//Repository//PostRepository.php';
+require_once __DIR__. '//..//Models//Post.php';
+//require_once __DIR__. '//..//Database.php';
+require_once __DIR__. '//..//Repository//PostRepository.php';
 
 class BoardController extends AppController {
 

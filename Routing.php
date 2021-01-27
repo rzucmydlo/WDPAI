@@ -1,10 +1,10 @@
 <?php
 
-require_once 'Controllers//BoardController.php';
-require_once 'Controllers//SecurityController.php';
-require_once 'Controllers//AdminController.php';
+require_once 'src//Controllers//BoardController.php';
+require_once 'src//Controllers//SecurityController.php';
+require_once 'src//Controllers//AdminController.php';
 
-class Routing {
+class Router {
     private $routes = [];
 
     public function __construct()

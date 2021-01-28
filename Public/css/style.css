@@ -135,7 +135,7 @@ button  { /* przyciski continue, register */
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) { /* co ma się wyświetlać */
     body {
         font-size: 18px;
     }

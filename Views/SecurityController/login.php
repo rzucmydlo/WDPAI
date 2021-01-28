@@ -9,7 +9,7 @@
     
     <?php include(dirname(__DIR__).'/Common/head.php'); ?>
     <title>Nitrogen</title>
-    <meta name="description" content="We can help you track your menstruate cycle!"/>
+    <meta name="description" content="We can help you track your cycle!"/>
     <meta name="keywords" content="period, cycle, menstruate, woman's body"/>
 </head>
 

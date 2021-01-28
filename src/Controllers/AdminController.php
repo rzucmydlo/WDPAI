@@ -9,7 +9,8 @@ class AdminController extends AppController {
     public function index()
     {
         $userRepository = new UserRepository();
-        $this->render('users', ['user' => $userRepository->getUser($_SESSION['id'])]);
+        $this->render('login');
+        //$this->render('users', ['user' => $userRepository->getUser($_SESSION['id'])]);
     }
 
     public function users()

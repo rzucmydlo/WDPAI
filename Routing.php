@@ -1,49 +1,40 @@
 <?php
 
-require_once 'src//Controllers//BoardController.php';
-require_once 'src//Controllers//SecurityController.php';
-require_once 'src//Controllers//AdminController.php';
+require_once 'src/controllers/AdminController.php';
+require_once 'src/controllers/SecurityController.php';
+require_once 'src/controllers/BoardController.php';
 
-class Router {
-    private $routes = [];
+class Router
+{
 
-    public function __construct()
+    public static $routes;
+
+    public static function get($url, $view)
     {
-        $this->routes = [
-            'board' => [
-                'controller' => 'BoardController',
-                'action' => 'getLatestPhotos'
-            ],
-            'login' => [
-                'controller' => 'SecurityController',
-                'action' => 'login'
-            ],
-            'logout' => [
-                'controller' => 'SecurityController',
-                'action' => 'logout'
-            ],
-            'admin' => [
-                'controller' => 'AdminController',
-                'action' => 'index'
-            ],
-            'users' => [
-                'controller' => 'AdminController',
-                'action' => 'users'
-            ],
-            
-
-        ];
+        self::$routes[$url] = $view;
     }
 
-    public function run()
+    public static function post($url, $view)
     {
-        $page = isset($_GET['page']) ? $_GET['page'] : 'login';
+        self::$routes[$url] = $view;
+    }
 
-        if (isset($this->routes[$page])) {
-            $controller = $this->routes[$page]['controller'];
-            $action = $this->routes[$page]['action'];
-            $object = new $controller;
-            $object->$action();
+    public static function run($url)
+    {
+
+        $urlParts = explode("/", $url);
+        $action = $urlParts[0];
+
+        if (!array_key_exists($action, self::$routes)) {
+            die("Wrong url!");
         }
+
+        $controller = self::$routes[$action];
+        $object = new $controller;
+        $action = $action ?: 'index';
+
+        $id = $urlParts[1] ?? '';
+
+        $object->$action($id);
     }
 }
